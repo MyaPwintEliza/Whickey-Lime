@@ -1,0 +1,425 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,500;0,600;1,500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  /* background-color: #011903; */
+  background-image: url(images/background.png);
+  color: #f7efba;
+}
+h3 {
+  color: #1b5530;
+  font-weight: bold;
+}
+p::selection {
+  background-color: #f7efba;
+}
+h3::selection {
+  color: #f7efba;
+  background-color: #1b5530;
+}
+h1::selection {
+  color: #f7efba;
+  background-color: #1b5530;
+}
+h2::selection {
+  color: #f7efba;
+  background-color: #1b5530;
+}
+#navbar {
+  background-color: #333; /* Black background color */
+  position: fixed; /* Make it stick/fixed */
+  top: 0; /* Stay on top */
+  width: 100%; /* Full width */
+  transition: top 0.4s ease-in-out;
+  transition-delay: 0.2;
+}
+nav {
+  padding: 1em;
+  text-align: center;
+  /* background-color: RGB(231, 216, 109); */
+  background-image: url(images/paper3.png);
+}
+nav p {
+  color: black;
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  font-size: 1.2rem;
+}
+nav a {
+  text-decoration: none;
+  color: #1b5530;
+  font-weight: bold;
+}
+nav a:hover {
+  color: antiquewhite;
+}
+nav .logo {
+  width: 15em;
+}
+.header-content {
+  position: absolute;
+  width: 40%;
+  min-height: 10%;
+  margin-left: 55%;
+  margin-top: 15%;
+  font-size: 1.5rem;
+  background-color: #00000063;
+  padding: 1em;
+}
+.header-content h1 {
+  font-size: 4rem;
+}
+.header-content button {
+  width: 15rem;
+  padding: 1rem;
+  background-color: #f7efba;
+  border: none;
+  cursor: pointer;
+  color: #011903;
+  font-size: 0.8em;
+  margin-top: 10%;
+}
+.header-content button:hover {
+  opacity: 0.8;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+  font-style: italic;
+  text-align: center;
+  padding: 30px;
+  color: #1b5530;
+}
+.container h2 {
+  font-size: 2.5rem;
+  padding: 1%;
+}
+.cards {
+  position: absolute;
+  display: flex;
+  gap: 15px;
+  margin: 10% 5%;
+}
+.ourIdentity,
+.our-ingeredients,
+.our-process,
+.our-enthos {
+  background-color: #1b5530;
+  padding: 1.5em;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.cards p {
+  padding-top: 5%;
+}
+
+.information {
+  display: flex;
+  background-image: url(images/background.png);
+  color: #1b5530;
+}
+.information img {
+  width: 30%;
+}
+.info-content {
+  flex-direction: column;
+  width: 80%;
+  margin-top: 7%;
+}
+.info-content .one p {
+  width: 40%;
+}
+/* .info-content .one h3 {
+  font-size: 4rem;
+} */
+.info-content .right {
+  text-align: right;
+  margin-left: 5%;
+}
+.try-out {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5%;
+}
+.try-out img {
+  width: 30%;
+}
+.tryOut-content {
+  width: 30%;
+  text-align: center;
+  color: #1b5530;
+  font-style: italic;
+  font-size: 2rem;
+}
+.tryOut-content h2 {
+  margin-bottom: 3%;
+}
+.tryOut-content a {
+  text-decoration: none;
+  color: #f7efba;
+}
+.tryOut-content a:hover {
+  color: #1b5530;
+}
+.tryOut-content svg {
+  width: 1.5rem;
+}
+.tryOut-content span {
+  font-style: italic;
+}
+.tryOut-content img {
+  width: 50%;
+}
+.img-bg {
+  background-color: black;
+}
+.img-bg img {
+  opacity: 0.4;
+}
+.about-drink {
+  display: flex;
+  font-size: 1.7rem;
+  padding: 2em;
+  gap: 10%;
+}
+.readyTo-drink h2 {
+  font-size: 4rem;
+  color: #1b5530;
+  padding-bottom: 0.6em;
+}
+.readyTo-drink p {
+  font-size: 1.3rem;
+  /* font-style: italic; */
+  color: #011903;
+}
+.about-drink img {
+  padding: 1em;
+}
+.drink-info {
+  width: 70%;
+  font-size: 1.1rem;
+}
+.drink-info .colour {
+  display: flex;
+  padding: 1.5em;
+  gap: 6%;
+}
+.drink-info .nose {
+  display: flex;
+  padding: 1.5em;
+  gap: 12%;
+}
+.drink-info .palates {
+  display: flex;
+  padding: 1.5em;
+  gap: 5%;
+}
+.container-info {
+  position: absolute;
+  margin-left: 40%;
+  margin-top: 20%;
+  color: #011903;
+  font-style: italic;
+}
+.slide-show {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  background-color: black;
+}
+.slide-show .slide-item img {
+  width: 50%;
+  margin-left: 25%;
+  opacity: 0.8;
+}
+.slide-show .slide-item {
+  display: none;
+}
+.slide-show .visible {
+  display: block;
+}
+.slide-buttons {
+  padding-left: 24px;
+  padding-right: 24px;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+}
+.slide-buttons button {
+  width: 4%;
+  padding: 1em;
+  background-color: aliceblue;
+  border: none;
+  border-radius: 50px;
+}
+.place-info {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  background-color: #7a951f;
+}
+.place-info img {
+  width: 70%;
+}
+
+/* cards */
+a {
+  text-decoration: none;
+}
+
+.instagramCard {
+  display: flex;
+  width: 100%;
+  margin-top: 5%;
+}
+.instagramCard .card1,
+.card2,
+.card3 {
+  height: 35%;
+}
+.instagram-card {
+  background: #ffffff;
+  border: 1px solid #f2f2f2;
+  border-radius: 3px;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  color: #011903;
+}
+
+.instagram-card-header {
+  padding: 4%;
+}
+
+.instagram-card-user-image {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+}
+.instagram-card-time {
+  float: right;
+  width: 80px;
+  padding-top: 10px;
+  text-align: right;
+  color: #999;
+}
+
+.instagram-card-user-name {
+  margin-left: 20px;
+  font-weight: bold;
+  color: #262626;
+}
+
+.instagram-card-content {
+  padding: 20px;
+}
+
+.instagram-card-content svg {
+  width: 10%;
+  padding-right: 2%;
+}
+.instagram-card-content #save-icon {
+  margin-left: 56%;
+}
+.likes {
+  font-weight: bold;
+}
+
+.instagram-card-content-user {
+  font-weight: bold;
+  color: #262626;
+}
+
+.hashtag {
+  color: #003569;
+}
+
+.comments {
+  color: #999;
+}
+
+.user-comment {
+  color: #003569;
+}
+
+.instagram-card-footer {
+  padding: 2% 3%;
+  display: flex;
+  align-items: center;
+}
+
+.instagramCard hr {
+  margin-top: 30px;
+  margin-bottom: 0px;
+  border-bottom: 1px solid #ccc;
+  border: none;
+}
+
+.footer-action-icons {
+  font-size: 16px;
+  color: #ccc;
+}
+
+.comments-input {
+  width: 90%;
+  margin-left: 3%;
+  border: none;
+  outline: none;
+}
+footer {
+  font-family: "Kanit", sans-serif;
+  font-size: 1.4rem;
+}
+footer .contact {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 10%;
+  display: flex;
+  gap: 3%;
+  justify-content: space-between;
+}
+footer .contact img {
+  width: 30%;
+}
+footer .contact-info {
+  color: #011903;
+}
+footer .contact-info h2 {
+  margin: 5% 0;
+}
+footer .medias {
+  display: flex;
+  align-items: center;
+  gap: 5%;
+}
+footer .medias a {
+  color: #011903;
+}
+footer .medias a:hover {
+  opacity: 0.7;
+}
+footer .copyright {
+  width: 100%;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  background-color: #011903;
+}
